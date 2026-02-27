@@ -18,7 +18,7 @@ export default function LoginForm() {
   // affichage (render)
   return (
     <form action="submit" onSubmit={handleSubmit}>
-      <h1 className="text-3xl font-bold mb-12">Bienvenue chez nous</h1>
+      <h1 className="text-3xl font-bold mb-12">Bienvenue chez nous !</h1>
       <h2 className="text-2xl font-bold mb-4">Connectez-vous</h2>
       <input
         className="border px-1"
