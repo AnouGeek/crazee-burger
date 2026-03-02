@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function LoginForm() {
   // state
@@ -28,9 +29,11 @@ export default function LoginForm() {
         placeholder="Entrez votre prénom..."
         required
       />
-      <button className="border px-2 bg-slate-200 rounded cursor-pointer">
+      <button 
+      className="border px-2 bg-slate-200 rounded cursor-pointer">
         Accédez à votre espace
       </button>
+      <Link to="/order">Vers OrderPage</Link>
     </form>
   );
 }
