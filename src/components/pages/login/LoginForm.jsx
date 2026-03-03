@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
   // state
@@ -19,7 +19,9 @@ export default function LoginForm() {
 
   // affichage (render)
   return (
-    <form action="submit" onSubmit={handleSubmit}>
+    <div 
+    className="bg-green-500"
+    action="submit" onSubmit={handleSubmit}>
       <h1 className="text-3xl font-bold mb-12">Bienvenue chez nous !</h1>
       <h2 className="text-2xl font-bold mb-4">Connectez-vous</h2>
       <input
@@ -27,12 +29,12 @@ export default function LoginForm() {
         value={inputValue}
         onChange={handleChange}
         type="text"
-        placeholder="Entrez votre prénom..."
+        placeholder="Entrez votre prénom"
         required
       />
       <button className="border px-2 bg-slate-200 rounded cursor-pointer">
-        Accédez à votre espace
+        Accéder à mon espace
       </button>
-    </form>
+    </div>
   );
 }
