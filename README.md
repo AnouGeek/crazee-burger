@@ -1,16 +1,24 @@
-# React + Vite
+# 🍔 Crazee Burger - Login Interface
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository for the **Crazee Burger login interface**. This is the first module of a larger project, focusing on a polished and functional authentication UI.
 
-Currently, two official plugins are available:
+🚀 **[VIEW THE LIVE DEMO HERE](
+https://crazee-burger-4jfvjlu3j-anougeeks-projects.vercel.app/
+)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 About the Project
+This project is part of an advanced React training course. This specific module focuses on building a professional login form, implementing core concepts such as:
+* Reusable UI components.
+* Advanced styling with Tailwind CSS.
+* State management for form inputs.
 
-## React Compiler
+## 🛠️ Tech Stack
+* **Framework:** React.js (via Vite)
+* **Styling:** Tailwind CSS
+* **Routing:** React Router v6
+* **Deployment:** Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Installation and Local Setup
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/crazee-burger.git](https://github.com/YOUR_USERNAME/crazee-burger.git)
