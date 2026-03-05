@@ -1,6 +1,6 @@
 export default function Logo() {
   return (
-    <div className="flex items-center transform scale-[2.5] border">
+    <div className="flex items-center transform scale-[2.5]">
       <h1 className="text-[36px] leading-[1em] font-bold uppercase tracking-[1.5px] text-[#ffa01b] font-amatic">
         CRAZEE
       </h1>

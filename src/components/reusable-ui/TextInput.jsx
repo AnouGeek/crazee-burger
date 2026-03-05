@@ -6,10 +6,10 @@ export default function TextInput({
   ...extraProps
 }) {
   return (
-    <div>
+    <div className={`flex items-center ${className}`}>
       {Icon && Icon}
       <input
-        className={className}
+        className="w-full outline-none"
         value={value}
         onChange={onChange}
         type="text"

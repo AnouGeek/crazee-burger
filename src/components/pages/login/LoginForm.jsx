@@ -1,11 +1,15 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import TextInput from "../../reusable-ui/TextInput";
+import PrimaryButton from "../../reusable-ui/PrimaryButton";
 import { BsPersonCircle } from "react-icons/bs";
+import { RiLockPasswordLine } from "react-icons/ri";
+import { FaCircleChevronRight } from "react-icons/fa6";
 
 export default function LoginForm() {
   // state
   const [inputValue, setInputValue] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   // comportements
@@ -18,11 +22,14 @@ export default function LoginForm() {
   const handleChange = (event) => {
     setInputValue(event.target.value);
   };
+  const handlePassword = (event) => {
+    setPassword(event.target.value);
+  };
 
   // affichage (render)
   return (
     <form
-      className="bg-green-500 text-center max-w-[500px] min-w-[400px] mx-auto py-[2.5rem] px-[2rem] rounded-[5px] font-amatic"
+      className="text-center max-w-[500px] min-w-[400px] mx-auto py-[2.5rem] px-[2rem] rounded-[5px] font-amatic"
       action="submit"
       onSubmit={handleSubmit}
     >
@@ -38,13 +45,23 @@ export default function LoginForm() {
         onChange={handleChange}
         placeholder={"Entrez votre prénom"}
         required
-        Icon={<BsPersonCircle />}
-        className="border px-1 bg-blue-600"
+        Icon={<BsPersonCircle className="mr-5" />}
+        className="border px-1 bg-blue-600 mb-2"
+      />
+      <TextInput
+        value={password}
+        onChange={handlePassword}
+        placeholder={"Entrez votre mot de passe"}
+        required
+        Icon={<RiLockPasswordLine className="mr-5" />}
+        className="border px-1 bg-yellow-600 mb-5 w-full"
       />
 
-      <button className="border px-2 bg-slate-200 rounded cursor-pointer">
-        Accéder à mon espace
-      </button>
+      <PrimaryButton
+        className="border px-2 bg-slate-200 rounded cursor-pointer flex items-center mx-auto"
+        label={"Accéder à votre espace"}
+        Icon={<FaCircleChevronRight className="ml-5"/>}
+      />
     </form>
   );
 }
